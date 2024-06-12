@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.loading-animation {
+  display: block;
+  animation: rotate 1s linear infinite;
+}
+
+.fade-in {
+  animation: fade 300ms ease-in-out forwards;
+  opacity: 1;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
